@@ -1,0 +1,365 @@
+<html lang="ro">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Cosmina Rusu">
+    <meta name="keywords" content="pensiune, restaurant, pet-friendly">
+    <meta name="description"
+        content="Site-ul de prezentare al Pensiunii cu pisici, o pensiune pet-friendly la care vă puteți bucura de compania micilor feline.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Allura&family=Dancing+Script:wght@700&family=Great+Vibes&family=Pinyon+Script&family=Unna&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <title>Pensiunea cu pisici</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <style>
+        body {
+            background-color: #E5E5E5;
+        }
+
+        .navbar-brand img {
+            height: 50px;
+        }
+
+        .navbar-brand,
+        .navbar-brand a {
+            font-family: 'Great Vibes', cursive;
+            font-size: 2rem;
+            color: #E5E5E5;
+        }
+
+        .navbar-toggler-icon {
+            background-image: url("images/menu.png");
+        }
+
+        .navbar {
+            background-color: #57648C;
+        }
+
+        footer {
+            background-color: #57648C;
+        }
+
+        .copyright {
+            background-color: #934A5F;
+        }
+
+        i {
+            font-size: 3rem;
+        }
+
+        .footer-list {
+            justify-content: flex-end;
+        }
+
+        footer img {
+            height: 50px;
+        }
+
+        .nav-link {
+            color: #E5E5E5;
+            font-size: 1.5rem;
+            font-family: 'Unna', serif;
+            text-decoration: none;
+            padding: 10px;
+        }
+
+        .nav-link:hover {
+            text-decoration-line: underline overline;
+            color: #C2B4D6;
+            background-color: #934A5F;
+        }
+
+        .navbar-collapse {
+            justify-content: flex-end;
+        }
+
+        .carousel-control-prev {
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .carousel-control-next {
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .card {
+            background-color: #cfc7d9;
+        }
+
+        h3 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 2.5rem;
+        }
+
+        .badge {
+            background-color: #934A5F;
+            font-family: 'Unna', serif;
+        }
+
+        p {
+            font-family: 'Unna', serif;
+            font-size: 1.3rem;
+        }
+
+        h2 {
+            font-family: 'Great Vibes', cursive;
+            font-size: 3rem;
+            padding-top: 5rem;
+        }
+
+        iframe {
+            height: 40vh;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <!--Nu mi se pune titlul in acelasi rand cu imaginea.-->
+
+    <!--NAVBAR-->
+    <header class="navbar navbar-expand-lg sticky-top">
+        <nav class="container-xxl mx-0">
+            <h1 class="navbar-brand mb-0"><a href="index.html"><img class="ms-4 me-4" src="images/animal-shelter.png"
+                        alt="Logo: Conturul unei căsuțe mov cu două siluete de pisici în ea">Pensiunea cu pisici</a>
+            </h1>
+
+            <button class="navbar-toggler d-flex d-lg-none flex-column me-3 border-0" type="button"
+                data-bs-toggle="collapse" data-bs-target="#mainMenu" aria-controls="mainMenu" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainMenu">
+                <ul class="nav main-menu flex-column flex-md-row me-5">
+                    <li class="nav-item ">
+                        <a class="nav-link shadow rounded-pill" href="#acasa">Despre noi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link shadow rounded-pill" href="#camere">Camere</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link shadow rounded-pill" href="#restaurant">Restaurant</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link shadow rounded-pill" href="#evenimente">Evenimente</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link shadow rounded-pill" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!--CARUSEL-->
+    <div id="caruselFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/pensiune.jpg" class="d-block w-100" alt="O casă de cărămidă cu etaj înconjurată de tufișuri cu flori, copaci și gazon verde.">
+            </div>
+            <div class="carousel-item">
+                <img src="images/pensiune2.jpg" class="d-block w-100" alt="O pensiune albă cu acoperiș roșu în spatele căreia este o pădure de conifere, iar în față are un lac care reflectă copacii și pensiunea.">
+            </div>
+            <div class="carousel-item">
+                <img src="images/camera.jpg" class="d-block w-100" alt="Cameră cu pereți acoperiți cu lambriu, cu un scaun albastru în colț, un pat cu lenjerie albastră și două ferestre pe care se vede cum ninge afară.">
+            </div>
+            <div class="carousel-item">
+                <img src="images/mic-dejun.jpg" class="d-block w-100" alt="O tavă de lemn pusă pe un material alb, pe care se află un bol cu ovăz și o lingură în el și o cană cu o băutură și scorțișoară.">
+            </div>
+            <div class="carousel-item">
+                <img src="images/sala.jpg" class="d-block w-100" alt="O sală de mese cu tapet ce imită lemnul, cu multe becuri ce atârnă din tavan, cu mese patrate de lemn și scaune negre.">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#caruselFade" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#caruselFade" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!--ACASA-->
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <p class="pt-3">Bine ați venit la Pensiunea cu pisici, un colț de rai pentru iubitorii de pisici și nu numai!
+                    Suntem mândri să vă oferim o experiență de cazare pet-friendly, unde dragostea pentru animale se
+                    împletește cu confortul și ospitalitatea. Situată la poalele Muntelui Ceahlău, pensiunea noastră
+                    se remarcă prin atmosfera caldă și primitoare, perfectă pentru turiștii care doresc să se bucure
+                    de momente speciale alături de pisicile locatare sau de propriile pisicuțe.</p>
+                <h2 id="acasa">Despre noi</h2>
+                <p>La pensiunea cu pisici, ne-am asumat pasiunea pentru pisici, iar asta se reflectă în prezența
+                    noastră adorabilă de feline care împânzesc proprietatea. De la pisicile noastre rezidente, gata
+                    să ofere îmbrățișări și să primească atenție, până la ospitalitatea noastră dedicată, vă
+                    garantăm o experiență pet-friendly autentică.</p>
+                <p>Camerele noastre spațioase și confortabile au fost concepute pentru a vă oferi o ședere relaxantă
+                    alături de animalul dumneavoastră de companie. Fie că sunteți în călătorie cu prietenul vostru
+                    felin sau căutați un colț de liniște pentru a vă bucura de prezența acestora, la Pensiunea
+                    noastră veți găsi tot ceea ce aveți nevoie.</p>
+                <p>Echipa noastră iubește animalele și este pregătită să vă ofere recomandări pentru activități
+                    pet-friendly în zona din jur și să vă facă șederea cât mai plăcută posibil. Împreună, vom crea
+                    amintiri de neuitat pentru dumneavoastră și prietenul dumneavoastră cu blăniță.</p>
+            </div>
+        </div>
+    </div>
+
+    <!--CAMERE-->
+    <!--div container in care sa am 3 carduri care pe ecran mare se afiseaza pe 4 coloane, pe ecran mediu se afiseaza pe 6 coloane, pe ecran mic se afiseaza pe 12 coloane-->
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2 id="camere">Camere</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card">
+                    <img class="w-75 mx-auto pt-3" src="images/camerasingle1.jpg" alt="Cameră cu bârne vizibile pe tavan, cu un pat de lemn cu așternuturi albe, o noptieră și două lumini deasupra patului.">
+                    <div class="card-body">
+                        <h3 class="card-title text-center">Cameră single <span class="badge rounded-pill">Renovat</span>
+                        </h3>
+                        <p class="card-text">Preț: 130 lei/noapte</p>
+                        <p class="card-text">Descriere: Cameră cu un pat, baie proprie, balcon</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card">
+                    <img class="w-75 mx-auto pt-3" src="images/cameradubla.jpg" alt="Cameră cu pat foarte lat, două noptiere cu lămpi pe ele și un tablou deasupra patului.">
+                    <div class="card-body">
+                        <h3 class="card-title text-center">Cameră dublă <span class="badge rounded-pill">Renovat</span>
+                        </h3>
+                        <p class="card-text">Preț: 250 lei/noapte</p>
+                        <p class="card-text">Descriere: Cameră cu pad dublu, baie proprie, balcon</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card">
+                    <img class="w-75 mx-auto pt-3" src="images/apartament.jpg" alt="Camera cu două paturi de lemn de o persoană, cu lumini deasupra paturilor.">
+                    <div class="card-body">
+                        <h3 class="card-title text-center">Apartament <span class="badge rounded-pill">Nou</span>
+                        </h3>
+                        <p class="card-text">Preț: 450 lei/noapte</p>
+                        <p class="card-text">Descriere: Apartament cu două camere, baie proprie, balcon</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--RESTAURANT-->
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2 id="restaurant">Restaurant</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-lg-6">
+                <p>Într-o atmosferă caldă și primitoare, restaurantul nostru este locul ideal pentru a vă bucura de micul dejun, prânzul sau cina în timp ce admirați priveliștile pitorești ale împrejurimilor. Indiferent dacă sunteți oaspeți ai pensiunii sau vă doriți doar o escapadă culinară deosebită, vă garantăm o experiență gustativă remarcabilă.</p>
+                <div class="text-center">
+                <img class="w-75" src="images/breakfast2.jpg"  alt="Un mic dejun cu două farfurii pe care se află omletă, carne, felii de portocale, iar pe masă este un măr, două cafele, o chiflă și un bol cu ovăz cu fructe">
+                </div>
+                <p>Pentru a vă satisface nevoile dietetice și preferințele individuale, suntem mereu pregătiți să adaptăm preparatele noastre. Echipa noastră de ospitalitate este aici pentru a vă oferi o servire impecabilă și pentru a vă ajuta să vă bucurați de fiecare moment petrecut în restaurantul nostru.</p>
+            </div>
+            <div class="col-12 col-lg-6 d-flex align-items-lg-center">
+                <!--NU MI SE PUNE IMAGINEA PE MIJLOC VERTICAL-->
+                <img class="w-100 " src="images/dejun-pisica.jpg" alt="O tavă de lemn cu cafea și fursecuri așezată pe un pat în care se află două persoane, iar în fața tăvii stă o pisică portocalie care se uită în sus, spre poză.">
+            </div>
+        </div>
+    </div>
+
+    <!--EVENIMENTE-->
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2 id="evenimente">Evenimente</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-lg-6">
+                <img class="w-100" src="images/sala-de-mese.jpg" alt="O sală de mese cu tapet ce imită lemnul, cu multe becuri ce atârnă din tavan, cu mese patrate de lemn și scaune negre." class="img50">
+            </div>
+            <div class="col-12 col-lg-6 d-flex flex-column justify-content-center">
+                <p>Spațiul nostru versatil și atmosfera rafinată fac din pensiunea noastră locul perfect pentru a găzdui diverse evenimente, de la nunți romantice și petreceri private la conferințe de afaceri și reuniuni de familie.</p>
+                <p>
+                Cu o echipă dedicată și experimentată în organizarea evenimentelor, suntem aici pentru a vă ajuta să transformați fiecare ocazie într-un moment de neuitat. Sala noastră de evenimente poate fi personalizată în funcție de preferințele dumneavoastră și necesitățile evenimentului, asigurându-vă că fiecare detaliu este pus în valoare.</p>
+            </div>
+        </div>
+    </div>
+
+    <!--CONTACT-->
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2 id="contact">Contact</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <p>Suntem mereu încântați să vă auzim și să vă ajutăm să vă pregătiți sejurul la Pensiunea cu pisici.
+                    Pentru întrebări, rezervări sau solicitări speciale, vă rugăm să nu ezitați să ne contactați. Iată
+                    cum puteți lua legătura cu noi:</p>
+                <div class="col-12 text-center py-4">
+                <p> Adresa:</p>
+
+                <iframe class="w-50"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2732.647630862378!2d23.60477417585636!3d46.771841645248685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47490c2321652047%3A0x26c7a15ac3b3be71!2sFacultatea%20de%20%C8%98tiin%C8%9Be%20Politice%2C%20Administrative%20%C8%99i%20ale%20Comunic%C4%83rii!5e0!3m2!1sro!2sro!4v1700477893994!5m2!1sro!2sro"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+                <p><a href="https://www.instagram.com/fspac/?hl=ro" target="_blank">Instagram</a>: Primiți răspunsuri
+                    rapid, puteți vedea recenzii și fotografii de la locație</p>
+
+                <p> Telefon:
+                    Pentru asistență imediată, sunați-ne la 0123456789. Echipa noastră de ospitalitate este disponibilă
+                    să vă răspundă la întrebări și să vă ajute cu rezervările.</p>
+
+                <p> E-mail:
+                    Puteți să ne trimiteți un e-mail la adresa pisica@miau.ro. Vă rugăm să specificați scopul mesajului
+                    și să ne furnizați detaliile necesare pentru a vă oferi un răspuns rapid și precis.</p>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!--footer cu informatii de copyright, icons funtionale si logo-->
+    <footer>
+        <div class="container p-4 pb-0">
+            <div class="d-flex justify-content-between">
+                <a href="#acasa"><img src="images/animal-shelter.png"
+                        alt="Logo: Conturul unei căsuțe mov cu două siluete de pisici în ea"></a>
+                <ul class=" list-unstyled d-flex footer-list">
+                    <!--Facebook-->
+                    <li class="ps-3"><a class="text-dark" href="https://www.facebook.com/fspac.ubb" target="_blank"><i class="bi bi-facebook"></i></a></li>
+                    <!--Instagram-->
+                    <li class="ps-3"><a class="text-dark" href="https://www.instagram.com/fspac/?hl=ro" target="_blank"><i class="bi bi-instagram"></i></a></li>
+                    <!-- Email -->
+                    <li class="ps-3"><a class="text-dark"  href="mailto:pisica@miau.com" target="_blank"><i class="bi bi-envelope"></i></a></li>
+                </ul>
+
+            </div>
+            <!-- Section: Social media -->
+        </div>
+
+        <!-- Copyright -->
+        <div class="text-center p-3 copyright">
+            © 2023 Pensiunea cu pisici. All rights reserved.
+        </div>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
